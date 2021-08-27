@@ -1,0 +1,9 @@
+#include "INTEGER.h"
+
+INTEGER::INTEGER()
+{
+}
+
+INTEGER::~INTEGER()
+{
+}
