@@ -7,8 +7,9 @@ class STRING
 {
 	public:
 		STRING();
+		STRING(char,char);
 		~STRING();
-		
+		string getCadena();
 	private:
 		string cadena;
 };

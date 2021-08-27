@@ -1,12 +1,14 @@
 #ifndef CHAR_H
 #define CHAR_H
+#include "STRING.h"
 
 class CHAR
 {
 	public:
 		CHAR();
 		~CHAR();
-		CHAR operator+(char);
+		STRING* operator+(char);
+		char getCaracter();
 	private:
 		char caracter;
 };

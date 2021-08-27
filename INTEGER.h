@@ -6,6 +6,7 @@ class INTEGER
 	public:
 		INTEGER();
 		~INTEGER();
+		int getNumero();
 	private:
 		int numero;
 };
