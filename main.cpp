@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
 				cout<<"Ingrese un numero"<<endl;
 				cin>>num;
 				INTEGER* nuevo=new INTEGER (num);
+				numeros.push_back(nuevo);
 				cout<<"Elemento agregado con exito"<<endl<<endl;
 				op=menu();
 			}
