@@ -146,7 +146,7 @@ int menu(){
 }
 
 void listarNumeros(vector<INTEGER*> listaN){
-	for(int i=0;listaN.size();i++){
+	for(int i=0;i<listaN.size();i++){
 		cout<<i<<"->";
 		!*listaN[i];
 		cout<<endl;
@@ -154,7 +154,7 @@ void listarNumeros(vector<INTEGER*> listaN){
 }
 
 void listarLetras(vector<CHAR*> listaL){
-	for(int i=0;listaL.size();i++){
+	for(int i=0;i<listaL.size();i++){
 		cout<<i<<"->";
 		!*listaL[i];
 		cout<<endl;
@@ -162,7 +162,7 @@ void listarLetras(vector<CHAR*> listaL){
 }
 
 void listarCadenas(vector <STRING*> listaC){
-	for(int i=0;listaC.size();i++){
+	for(int i=0;i<listaC.size();i++){
 		cout<<i<<"->";
 		!*listaC[i];
 		cout<<endl;
