@@ -6,6 +6,7 @@ class CHAR
 {
 	public:
 		CHAR();
+		CHAR(char);
 		~CHAR();
 		STRING* operator+(char);
 		char getCaracter();

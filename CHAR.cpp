@@ -7,6 +7,10 @@ CHAR::CHAR()
 {
 }
 
+CHAR::CHAR(char caracter){
+	this->caracter=caracter;
+};
+
 CHAR::~CHAR()
 {
 }

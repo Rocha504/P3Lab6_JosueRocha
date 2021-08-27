@@ -22,8 +22,33 @@ int main(int argc, char** argv) {
 	while(op!=7){
 		switch(op){
 			case 1:{
-				
-			 
+				int num;
+				cout<<"Ingrese un numero"<<endl;
+				cin>>num;
+				INTEGER* nuevo=new INTEGER (num);
+				numeros.push_back(nuevo);
+				cout<<"Elemento agregado con exito"<<endl<<endl;
+				op=menu();
+			}
+			break;
+			case 2:{
+				char carac;
+				cout<<"Ingrese una letra"<<endl;
+				cin>>carac;
+				CHAR* nuevo=new CHAR(carac);
+				letras.push_back(nuevo);
+				cout<<"Elemento agregado con exito"<<endl<<endl;
+				op=menu();
+			}
+			break;
+			case 3:{
+				string cad;
+				cout<<"Ingrese una cadena"<<endl;
+				cin>>cad;
+				STRING* nuevo=new STRING(cad);
+				cadenas.push_back(nuevo);
+				cout<<"Elemento agregado con exito"<<endl<<endl;
+				op=menu();
 			}
 			break;
 		}

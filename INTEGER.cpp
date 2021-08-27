@@ -4,6 +4,10 @@ INTEGER::INTEGER()
 {
 }
 
+INTEGER::INTEGER(int numero){
+	this->numero=numero;
+}
+
 INTEGER::~INTEGER()
 {
 }
