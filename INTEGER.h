@@ -13,6 +13,8 @@ class INTEGER
 		void operator-(INTEGER);
 		void operator*(INTEGER);
 		void operator/(INTEGER);
+		void operator!();
+		void operator<<(int numero);
 	private:
 		int numero;
 		

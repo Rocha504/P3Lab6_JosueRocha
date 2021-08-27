@@ -1,5 +1,7 @@
 #include "STRING.h"
 #include "CHAR.h"
+#include<iostream>
+using namespace std;
 
 STRING::STRING()
 {
@@ -19,6 +21,15 @@ void STRING::setCadena(string cadena){
 STRING::~STRING()
 {
 }
+
+void STRING :: operator!(){
+	cout<<this->cadena;	
+}
+
+void STRING::operator<<(string cadena){
+	this->cadena=cadena;
+}
+
 string STRING::getCadena(){
 	return this->cadena;
 }

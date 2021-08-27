@@ -45,6 +45,20 @@ void INTEGER:: operator/(INTEGER obj){
 	 
 	 cout<<"La division es: "<<x<<endl;
 }
+void INTEGER :: operator!(){
+	
+	cout<<this->numero;
+	
+}
+
+void  INTEGER :: operator<<(int numero){
+	
+	
+	this->numero=numero;
+
+}
+
+
 
 
  

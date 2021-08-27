@@ -12,6 +12,8 @@ class STRING
 		~STRING();
 		string getCadena();
 		void setCadena(string);
+		void operator!();
+		void operator<<(string);
 	private:
 		string cadena;
 };

@@ -1,4 +1,5 @@
 #include "CHAR.h"
+#include<iostream>
 #include <string>
 using namespace std;
 #include "STRING.h"
@@ -27,6 +28,12 @@ STRING CHAR:: operator+(CHAR carac){
 	
 };
 
+void CHAR :: operator!(){
+	cout<<this->caracter;	
+}
+void CHAR::operator<<(char caracter){
+	this->caracter=caracter;
+};
 char CHAR:: getCaracter(){
 	return this->caracter;
 }
