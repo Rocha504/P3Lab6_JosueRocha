@@ -8,7 +8,7 @@ class CHAR
 		CHAR();
 		CHAR(char);
 		~CHAR();
-		STRING* operator+(char);
+		STRING operator+(CHAR);
 		char getCaracter();
 	private:
 		char caracter;

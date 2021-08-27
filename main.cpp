@@ -7,6 +7,7 @@ using namespace std;
 #include "STRING.h"
 
 
+
 int menu();
 void listarNumeros(vector<INTEGER*>);
 void listarLetras(vector<CHAR*>);
@@ -51,6 +52,64 @@ int main(int argc, char** argv) {
 				op=menu();
 			}
 			break;
+			case 4:{
+				int a,b;
+			    listarLetras(letras);
+			    cout<<"seleccione 2 letras(ingrese el indice)"<<endl;
+			    cin>>a;
+			    cin>>b;
+			}
+			break;
+			case 5:{
+				int op2;
+				cout<<"Operaciones con INTEGER"<<endl;
+				cout<<"1-Sumar"<<endl;
+				cout<<"2-Restar"<<endl; 
+				cout<<"3-Multiplicacion"<<endl;
+				cout<<"4-Division"<<endl;
+				cout<<"Ingrese una opcion"<<endl;
+				cin>>op2;
+				switch(op2){
+					case 1:{
+						int x,y;
+						listarNumeros(numeros);
+						cout<<"Elija dos numeros(Seleccione los indices)"<<endl;
+						cin>>x;
+						cin>>y;
+						*numeros[x]+*numeros[y];	
+					}
+					break;
+					case 2:{
+						int x,y;
+						listarNumeros(numeros);
+						cout<<"Elija dos numeros(Seleccione los indices)"<<endl;
+						cin>>x;
+						cin>>y;
+						*numeros[x]-*numeros[y];
+					}
+					break;
+					case 3:{
+						int x,y;
+						listarNumeros(numeros);
+						cout<<"Elija dos numeros(Seleccione los indices)"<<endl;
+						cin>>x;
+						cin>>y;
+						*numeros[x] * *numeros[y];	 
+					}
+					break;
+					case 4:{
+						int x,y;
+						listarNumeros(numeros);
+						cout<<"Elija dos numeros(Seleccione los indices)"<<endl;
+						cin>>x;
+						cin>>y;
+						*numeros[x] / *numeros[y];	 	 
+					}
+					break;
+						
+				}
+			}
+			break;
 		}
 	}
 	
@@ -80,7 +139,7 @@ void listarNumeros(vector<INTEGER*> listaN){
 	}
 }
 
-void listarLetras( vector<CHAR*> listaL){
+void listarLetras(vector<CHAR*> listaL){
 	for(int i=0;listaL.size();i++){
 		cout<<i<<"->"<<listaL[i]->getCaracter()<<endl;
 	}

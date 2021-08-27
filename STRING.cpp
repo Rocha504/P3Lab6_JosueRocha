@@ -11,6 +11,11 @@ STRING::STRING(char x,char y){
 STRING::STRING(string cadena){
 	this->cadena=cadena;
 };
+
+void STRING::setCadena(string cadena){
+	this->cadena=cadena;
+}
+
 STRING::~STRING()
 {
 }

@@ -11,6 +11,7 @@ class STRING
 		STRING(string);
 		~STRING();
 		string getCadena();
+		void setCadena(string);
 	private:
 		string cadena;
 };

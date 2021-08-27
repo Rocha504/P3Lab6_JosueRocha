@@ -15,10 +15,13 @@ CHAR::~CHAR()
 {
 }
 
-STRING* CHAR:: operator+(char carac){
+STRING CHAR:: operator+(CHAR carac){
 	
-	STRING* cadena;
-	cadena=new STRING(this->caracter,carac);
+	STRING cadena;
+	string aux="";
+	aux+=this->caracter;
+	aux+=carac.getCaracter();
+	cadena.setCadena(aux);
 	
 	return cadena;
 	
