@@ -30,6 +30,12 @@ void STRING::operator<<(string cadena){
 	this->cadena=cadena;
 }
 
+void STRING:: operator*(int x){
+	for(int i=0;i<x;i++){
+		cout<<this->cadena;
+	}
+};
+
 string STRING::getCadena(){
 	return this->cadena;
 }

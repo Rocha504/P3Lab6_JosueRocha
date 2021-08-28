@@ -14,6 +14,7 @@ class STRING
 		void setCadena(string);
 		void operator!();
 		void operator<<(string);
+		void operator*(int x);
 	private:
 		string cadena;
 };

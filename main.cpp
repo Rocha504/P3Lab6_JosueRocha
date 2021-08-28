@@ -66,6 +66,7 @@ int main(int argc, char** argv) {
 			    cin>>b;
 			    STRING result= *letras[a] + *letras[b];
 			    cout<<result.getCadena()<<endl;	
+			    op=menu();
 			}
 			break;
 			case 5:{
@@ -116,6 +117,19 @@ int main(int argc, char** argv) {
 					break;
 						
 				}
+			}
+			break;
+			case 6:{
+				int x,y;
+				listarCadenas(cadenas);
+				cout<<"Elija una cadena(Seleccione los indices)"<<endl;
+				cin>>x;
+				cout<<"Repeticiones: "<<endl;
+				cin>>y;
+				*cadenas[x]*y;
+				cout<<endl;
+				op=menu();
+				
 			}
 			break;
 		}
